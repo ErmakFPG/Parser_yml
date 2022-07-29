@@ -18,6 +18,5 @@ def parsing_inverse(file_name):
 
 
 if __name__ == "__main__":
-    parsing_inverse(YML_NAME)
     for data in parsing_inverse(YML_NAME):
         response = requests.post(HTTP, json=data)
